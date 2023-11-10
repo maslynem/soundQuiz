@@ -1,0 +1,57 @@
+databaseChangeLog:
+  - changeSet:
+      context: dev
+      id: import-table-transport
+      author: maslynem
+      changes:
+        - loadData:
+            tableName: transport
+            file: db/changelog/csv/Transport.csv
+            separator: '\t'
+            columns:
+              - column:
+                  header: name
+                  name: name
+                  type: TEXT
+  - changeSet:
+      context: dev
+      id: import-table-nature
+      author: maslynem
+      changes:
+        - loadData:
+            tableName: nature
+            file: db/changelog/csv/Nature.csv
+            separator: '\t'
+            columns:
+              - column:
+                  header: name
+                  name: name
+                  type: TEXT
+  - changeSet:
+      context: dev
+      id: import-table-profession
+      author: maslynem
+      changes:
+        - loadData:
+            tableName: profession
+            file: db/changelog/csv/Profession.csv
+            separator: '\t'
+            columns:
+              - column:
+                  header: name
+                  name: name
+                  type: TEXT
+  - changeSet:
+      context: dev
+      id: import-table-sport
+      author: maslynem
+      changes:
+        - loadData:
+            tableName: sport
+            file: db/changelog/csv/Sport.csv
+            separator: '\t'
+            columns:
+              - column:
+                  header: name
+                  name: name
+                  type: TEXT

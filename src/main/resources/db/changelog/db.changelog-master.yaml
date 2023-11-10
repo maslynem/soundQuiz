@@ -1,0 +1,5 @@
+databaseChangeLog:
+  - include:
+      file: db/migrations/db.changelog-1.0-addTables.sql
+  - include:
+      file: db/migrations/db.changelog-2.0-ImportsDataFromCsv.yaml
