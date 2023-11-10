@@ -28,7 +28,7 @@ public class SoundQuizController {
         return quizGeneratorService.generateQuiz(request);
     }
 
-    @PostMapping("{topic}")
+    @GetMapping("{topic}")
     public List<String> getTopicEntities(@PathVariable String topic) {
         return topicService.findEntitiesByTopic(topic);
     }
