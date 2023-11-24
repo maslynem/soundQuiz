@@ -7,7 +7,7 @@ import lombok.Setter;
 @Getter
 @Setter
 @Entity
-@Table(name = "sport_ru")
+@Table(name = "sport")
 public class Sport extends TopicEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

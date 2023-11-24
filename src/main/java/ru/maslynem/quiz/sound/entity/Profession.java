@@ -7,7 +7,7 @@ import lombok.Setter;
 @Getter
 @Setter
 @Entity
-@Table(name = "profession_ru")
+@Table(name = "profession")
 public class Profession extends TopicEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
