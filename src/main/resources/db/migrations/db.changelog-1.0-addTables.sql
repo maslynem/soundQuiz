@@ -26,7 +26,7 @@ CREATE TABLE IF NOT EXISTS sport
     word          TEXT UNIQUE NOT NULL
 );
 
-CREATE TABLE IF NOT EXISTS damit
+CREATE TABLE IF NOT EXISTS damir
 (
     id            BIGSERIAL PRIMARY KEY,
     word          TEXT UNIQUE NOT NULL
