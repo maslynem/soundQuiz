@@ -5,13 +5,13 @@ databaseChangeLog:
       author: maslynem
       changes:
         - loadData:
-            tableName: transport
-            file: db/changelog/csv/Transport.csv
+            tableName: transport_ru
+            file: db/changelog/csv/Transport_ru.csv
             separator: '\t'
             columns:
               - column:
-                  header: name
-                  name: name
+                  header: word
+                  name: word
                   type: TEXT
   - changeSet:
       context: dev
@@ -19,13 +19,13 @@ databaseChangeLog:
       author: maslynem
       changes:
         - loadData:
-            tableName: nature
-            file: db/changelog/csv/Nature.csv
+            tableName: nature_ru
+            file: db/changelog/csv/Nature_ru.csv
             separator: '\t'
             columns:
               - column:
-                  header: name
-                  name: name
+                  header: word
+                  name: word
                   type: TEXT
   - changeSet:
       context: dev
@@ -33,13 +33,13 @@ databaseChangeLog:
       author: maslynem
       changes:
         - loadData:
-            tableName: profession
-            file: db/changelog/csv/Profession.csv
+            tableName: profession_ru
+            file: db/changelog/csv/Profession_ru.csv
             separator: '\t'
             columns:
               - column:
-                  header: name
-                  name: name
+                  header: word
+                  name: word
                   type: TEXT
   - changeSet:
       context: dev
@@ -47,11 +47,11 @@ databaseChangeLog:
       author: maslynem
       changes:
         - loadData:
-            tableName: sport
-            file: db/changelog/csv/Sport.csv
+            tableName: sport_ru
+            file: db/changelog/csv/Sport_ru.csv
             separator: '\t'
             columns:
               - column:
-                  header: name
-                  name: name
+                  header: word
+                  name: word
                   type: TEXT

@@ -8,11 +8,11 @@ import java.util.List;
 import java.util.Random;
 
 @Slf4j
-public abstract class Topic<T extends TopicEntity> {
+public abstract class BaseTopicService<T extends TopicEntity> {
     private final JpaRepository<T, Long> repository;
     private final Random random;
 
-    protected Topic(JpaRepository<T, Long> repository) {
+    protected BaseTopicService(JpaRepository<T, Long> repository) {
         this.repository = repository;
         random = new Random();
     }
@@ -26,4 +26,5 @@ public abstract class Topic<T extends TopicEntity> {
         List<Long> randomId = random.longs(1, count).distinct().limit(questionNumber).boxed().toList();
         return repository.findAllById(randomId);
     }
+
 }

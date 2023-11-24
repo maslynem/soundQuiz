@@ -4,8 +4,8 @@ import org.springframework.stereotype.Service;
 import ru.maslynem.quiz.sound.entity.Profession;
 import ru.maslynem.quiz.sound.repository.ProfessionRepository;
 
-@Service("profession")
-public class ProfessionService extends Topic<Profession> {
+@Service("Профессия")
+public class ProfessionService extends BaseTopicService<Profession> {
     protected ProfessionService(ProfessionRepository repository) {
         super(repository);
     }
