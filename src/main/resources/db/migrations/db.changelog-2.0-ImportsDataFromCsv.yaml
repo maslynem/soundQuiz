@@ -5,8 +5,8 @@ databaseChangeLog:
       author: maslynem
       changes:
         - loadData:
-            tableName: transport_ru
-            file: db/changelog/csv/Transport_ru.csv
+            tableName: transport
+            file: db/changelog/csv/transport.csv
             separator: '\t'
             columns:
               - column:
@@ -19,8 +19,8 @@ databaseChangeLog:
       author: maslynem
       changes:
         - loadData:
-            tableName: nature_ru
-            file: db/changelog/csv/Nature_ru.csv
+            tableName: nature
+            file: db/changelog/csv/nature.csv
             separator: '\t'
             columns:
               - column:
@@ -33,8 +33,8 @@ databaseChangeLog:
       author: maslynem
       changes:
         - loadData:
-            tableName: profession_ru
-            file: db/changelog/csv/Profession_ru.csv
+            tableName: profession
+            file: db/changelog/csv/profession.csv
             separator: '\t'
             columns:
               - column:
@@ -47,8 +47,36 @@ databaseChangeLog:
       author: maslynem
       changes:
         - loadData:
-            tableName: sport_ru
-            file: db/changelog/csv/Sport_ru.csv
+            tableName: sport
+            file: db/changelog/csv/sport.csv
+            separator: '\t'
+            columns:
+              - column:
+                  header: word
+                  name: word
+                  type: TEXT
+  - changeSet:
+      context: dev
+      id: import-table-damir
+      author: maslynem
+      changes:
+        - loadData:
+            tableName: damir
+            file: db/changelog/csv/damir.csv
+            separator: '\t'
+            columns:
+              - column:
+                  header: word
+                  name: word
+                  type: TEXT
+  - changeSet:
+      context: dev
+      id: import-table-item
+      author: maslynem
+      changes:
+        - loadData:
+            tableName: item
+            file: db/changelog/csv/item.csv
             separator: '\t'
             columns:
               - column:
